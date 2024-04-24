@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
-	<meta charset="UTF-8" />
-	<title>Page Title</title>
-	<meta name="viewport" content="width=device-width,initial-scale=1" />
-	<link
+<head>
+    <link
 		rel="stylesheet"
 		href="https://fonts.googleapis.com/css?family=Tangerine" />
-	<link rel="stylesheet" href="" />
-	<style>
-		.btn2 {
+    <style>
+        		.btn2 {
+z-index: 10;
 			position: absolute;
 			width: 800px;
 			height: 800px;
@@ -106,7 +103,6 @@
 
 		.btn2:hover {
 			opacity: 100%;
-			z-index: 10;
 		}
 
 		.btn3 {
@@ -893,12 +889,11 @@
 		}
 
 		.text-decoration {
+            transform: translate(-2%, -2%);
 			font-size: 50px;
 			font-weight: 900;
 			color: brown;
 			margin: 0 auto;
-			transform-origin: 0% 0%;
-			transform: translate(-1%, -1%);
 		}
 
 		.circle-container {
@@ -908,12 +903,12 @@
 			background-image: url('http://kerekenavilag.com/wp-content/uploads/2024/04/fullcirclegs.png');
 			background-size: cover;
 			background-position: center;
-			transform-origin: 49.67% 49.27%;
+            font-family: 'Tangerine';
 		}
 
 		.block-container {
 			width: 100vw;
-			height: 1500px;
+			height: 1000px;
 			display: flex;
 			flex-direction: row;
 			justify-content: center;
@@ -923,7 +918,7 @@
 		.column-container {
 			display: flex;
 			transform-origin: 49.57% 49.27%;
-			transform: rotate(160deg);
+			transform: rotate(205deg);
 			width: 800px;
 			height: 1000px;
 
@@ -941,8 +936,7 @@
 			height: 900px;
 
 			transform-origin: 50% 50%;
-			transform: rotate(180deg) /* rotateY(22.5deg) */;
-			/* transform: rotateY(22.5deg); */
+			transform: rotate(180deg);
 		}
 		.text2-container {
 			display: flex;
@@ -1015,108 +1009,52 @@
 			transform: rotate(495deg);
 		}
 
-		.text1-rot {
-			transform-origin: 50% 0%;
-			transform: rotate(22.5deg) translate(-110px, 20px);
-		}
-
-		.text2-rot {
-			transform-origin: 50% 0%;
-			transform: rotate(-22.5deg) translate(70px, 15px);
-		}
-
-		.text3-rot {
-			transform-origin: 50% 0%;
-			transform: rotate(-67.5deg) /* translate(70px, 15px) */;
-		}
-		
-		.text4-rot {
-			transform-origin: 50% 0%;
-			transform: rotate(-112.5deg) /* translate(70px, 15px) */;
-		}
-
-		.text5-rot {
-			transform-origin: 50% 0%;
-			transform: rotate(202.5deg) /* translate(70px, 15px) */;
-		}
-
-		.text6-rot {
-			transform-origin: 50% 0%;
-			transform: rotate(-202.5deg) /* translate(70px, 15px) */;
-		}
-
-		.text7-rot {
-			transform-origin: 50% 0%;
-			transform: rotate(112.5deg) /* translate(70px, 15px) */;
-		}
-
-		.text8-rot {
-			transform-origin: 50% 0%;
-			transform: rotate(67.5deg) /* translate(70px, 15px) */;
-		}
-
-
 		body {
-			font-family: 'Tangerine';
+			font-family: Tangerine;
 		}
-	</style>
-	<script src=""></script>
+    </style>
+</head>
+<body>
+    <div class="block-container">
+    <div class="column-container">
+        <div class="text1-container">
+            <span class="text-decoration">Teszt Cím</span>
+        </div>
+        <div class="text2-container">
+            <div class="text-decoration">Teszt Cím2</div>
+        </div>
+        <div class="text3-container">
+            <div class="text-decoration">Teszt Cím3</div>
+        </div>
+        <div class="text4-container">
+            <div class="text-rotate-decoration">Teszt Cím4</div>
+        </div>
+        <div class="text5-container">
+            <div class="text-rotate-decoration">Teszt Cím5</div>
+        </div>
+        <div class="text6-container">
+            <div class="text-rotate-decoration">Teszt Cím6</div>
+        </div>
+        <div class="text7-container">
+            <div class="text-rotate-decoration">Teszt Cím7</div>
+        </div>
+        <div class="text8-container">
+            <div class="text-decoration">Teszt Cím8</div>
+        </div>
 
-	<body>
-		<div class="block-container">
-			<div class="column-container">
-				<div class="text1-container">
-					<div class="text-decoration text1-rot">A szellemnek…</div>
-				</div>
-				<div class="text2-container">
-					<div class="text-decoration text2-rot">Épp testben</div>
-				</div>
-				<div class="text3-container">
-					<div class="text-decoration text3-rot">Rímelek</div>
-				</div>
-				<div class="text4-container">
-					<div class="text-rotate-decoration text4-rot">Bennem a zene</div>
-				</div>
-				<div class="text5-container">
-					<div class="text-rotate-decoration text5-rot">Budapest bennem</div>
-				</div>
-				<div class="text6-container">
-					<div class="text-rotate-decoration text6-rot">Járok-kelek</div>
-				</div>
-				<div class="text7-container">
-					<div class="text-rotate-decoration text7-rot">Csa(cs)k a család</div>
-				</div>
-				<div class="text8-container">
-					<div class="text-decoration text8-rot">A léleknek…</div>
-				</div>
-
-				<div class="circle-container">
-					<button
-						class="btn2"
-						onclick="window.location.href='https://kerekenavilag.com/zenek/';"></button>
-					<button
-						class="btn3"
-						onclick="window.location.href='https://kerekenavilag.com/bennem-budapest/';"></button>
-					<button
-						class="btn4"
-						onclick="window.location.href='https://kerekenavilag.com/jarok-kelek/';"></button>
-					<button
-						class="btn5"
-						onclick="window.location.href='https://kerekenavilag.com/csacsk-a-csalad/';"></button>
-					<button
-						class="btn6"
-						onclick="window.location.href='https://kerekenavilag.com/lelketekre-kotom/';"></button>
-					<button
-						class="btn7"
-						onclick="window.location.href='https://kerekenavilag.com/szellem-2/';"></button>
-					<button
-						class="btn8"
-						onclick="window.location.href='https://kerekenavilag.com/epp-testben/';"></button>
-					<button
-						class="btn9"
-						onclick="window.location.href='https://kerekenavilag.com/rimelek/';"></button>
-				</div>
-			</div>
-		</div>
-	</body>
+        <div class="circle-container">
+            <button href="http://kerekenavilag.com/bennem-budapest/" class="btn2"></button>
+            <button class="btn3"></button>
+            <button class="btn4"></button>
+            <button class="btn5"></button>
+            <button class="btn6"></button>
+            <button class="btn7"></button>
+            <button class="btn8"></button>
+            <button class="btn9"></button>
+        </div>
+    </div>
+</div>
+</body>
 </html>
+
+
