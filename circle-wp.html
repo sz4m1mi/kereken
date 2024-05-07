@@ -13,15 +13,9 @@
 			position: absolute;
 			width: 800px;
 			height: 800px;
-			padding: auto;
-			/* height: 600px; */
-			/* size: 50%; */
 			background-image: url('http://kerekenavilag.com/wp-content/uploads/2024/03/sector8.png');
-			background-size: 100%;
-			background-color: transparent;
-			transform: scale(0.75) translate(-17%, -17%);
+			background-size: cover;
 			background-position: center;
-			
 			opacity: 0%;
 			clip-path: polygon(49.14% 48.82%,
 					47.66% 45.53%,
@@ -121,9 +115,7 @@
 			width: 800px;
 			height: 800px;
 			background-image: url('http://kerekenavilag.com/wp-content/uploads/2024/03/secctor1.png');
-			background-size: 100%;
-			background-color: transparent;
-			transform: scale(0.75) translate(-17%, -17%);
+			background-size: cover;
 			background-position: center;
 			opacity: 0%;
 			clip-path: polygon(67.35% 3.401%,
@@ -253,9 +245,7 @@
 			width: 800px;
 			height: 800px;
 			background-image: url('http://kerekenavilag.com/wp-content/uploads/2024/03/sector2.png');
-			background-size: 100%;
-			background-color: transparent;
-			transform: scale(0.75) translate(-17%, -17%);
+			background-size: cover;
 			background-position: center;
 			opacity: 0%;
 			clip-path: polygon(67.38% 3.431%,
@@ -352,9 +342,7 @@
 			width: 800px;
 			height: 800px;
 			background-image: url('http://kerekenavilag.com/wp-content/uploads/2024/03/sector3.png');
-			background-size: 100%;
-			background-color: transparent;
-			transform: scale(0.75) translate(-17%, -17%);
+			background-size: cover;
 			background-position: center;
 			opacity: 0%;
 			clip-path: polygon(95.01% 29.42%,
@@ -448,9 +436,7 @@
 			width: 800px;
 			height: 800px;
 			background-image: url('http://kerekenavilag.com/wp-content/uploads/2024/03/sector4.png');
-			background-size: 100%;
-			background-color: transparent;
-			transform: scale(0.75) translate(-17%, -17%);
+			background-size: cover;
 			background-position: center;
 			opacity: 0%;
 			clip-path: polygon(70.4% 95.5%,
@@ -556,9 +542,7 @@
 			width: 800px;
 			height: 800px;
 			background-image: url('http://kerekenavilag.com/wp-content/uploads/2024/03/sector5.png');
-			background-size: 100%;
-			background-color: transparent;
-			transform: scale(0.75) translate(-17%, -17%);
+			background-size: cover;
 			background-position: center;
 			opacity: 0%;
 			clip-path: polygon(49.5% 49.68%,
@@ -679,9 +663,7 @@
 			width: 800px;
 			height: 800px;
 			background-image: url('http://kerekenavilag.com/wp-content/uploads/2024/03/sector6.png');
-			background-size: 100%;
-			background-color: transparent;
-			transform: scale(0.75) translate(-17%, -17%);
+			background-size: cover;
 			background-position: center;
 			opacity: 0%;
 			clip-path: polygon(49.65% 49.29%,
@@ -757,9 +739,7 @@
 			width: 800px;
 			height: 800px;
 			background-image: url('http://kerekenavilag.com/wp-content/uploads/2024/03/sector7.png');
-			background-size: 100%;
-			background-color: transparent;
-			transform: scale(0.75) translate(-17%, -17%);
+			background-size: cover;
 			background-position: center;
 			opacity: 0%;
 			clip-path: polygon(3.64% 31.3%,
@@ -888,16 +868,70 @@
 			opacity: 100%;
 		}
 
+		.btn-clr-circle {
+			position: absolute;
+			width: 800px;
+			height: 800px;
+			padding-top: 30%;
+			background-size: 100%;
+			background-position: center;
+			background-color: transparent;
+			border: none;
+
+			clip-path: polygon(46.91% 48.16%,
+					47.44% 47.32%,
+					47.44% 47.32%,
+					47.44% 47.32%,
+					48.58% 46.67%,
+					48.58% 46.67%,
+					48.58% 46.67%,
+					49.65% 46.43%,
+					49.65% 46.43%,
+					49.65% 46.43%,
+					50.85% 46.85%,
+					50.85% 46.85%,
+					50.85% 46.85%,
+					51.50% 47.56%,
+					51.50% 47.56%,
+					51.50% 47.56%,
+					52.04% 48.64%,
+					52.04% 48.64%,
+					52.04% 48.64%,
+					52.04% 49.77%,
+					52.04% 49.77%,
+					52.04% 49.77%,
+					51.38% 50.85%,
+					51.38% 50.85%,
+					51.38% 50.85%,
+					50.73% 51.74%,
+					50.73% 51.74%,
+					50.73% 51.74%,
+					49.35% 52.16%,
+					49.35% 52.16%,
+					49.35% 52.16%,
+					47.98% 51.62%,
+					47.98% 51.62%,
+					47.98% 51.62%,
+					47.03% 50.07%, 47.03% 50.07%, 47.03% 50.07%, 46.79% 48.94%, 46.91% 48.16%);
+			opacity: 100%;
+			z-index: 50;
+		}
+
 		@font-face {
 			font-family: "Le Jour Script";
-			src: url("fonts/Le Jour Script.woff") format("woff"),
+			src: url("file://D:/Games/szamimi/Next.Js/kereken/fonts/Le Jour Script.woff") format("woff"),
+		}
+
+		@font-face {
+			font-family: "daydream dafont free";
+			src: url("https://kerekenavilag.com/wp-content/themes/twentytwentyfour/assets/fonts/daydream dafont free.woff") format("woff"),
 		}
 
 		.text-rotate-decoration {
-			font-family: 'Le Jour Script', 'Tangerine';
+			font-family: 'daydream dafont free', 'Le Jour Script', 'Tangerine';
 
 			font-size: 1.5em;
-			font-weight: 900;
+			font-weight: 600;
 			color: #1A1514;
 			margin: 0 auto;
 			transform-origin: 48% 3%;
@@ -905,10 +939,10 @@
 		}
 
 		.text-decoration {
-			font-family: 'Le Jour Script', 'Tangerine';
+			font-family: 'daydream dafont free', 'Le Jour Script', 'Tangerine';
 
 			font-size: 1.5em;
-			font-weight: 900;
+			font-weight: 600;
 			color: #1A1514;
 			margin: 0 auto;
 			transform-origin: 0% 0%;
@@ -916,11 +950,9 @@
 		}
 
 		.circle-container {
-			display: flex;
-			width: 600px;
-			height: 600px;
-			/* width: 800px;
-			height: 800px; */
+			display: block;
+			width: 800px;
+			height: 800px;
 			background-image: url('http://kerekenavilag.com/wp-content/uploads/2024/04/fullcirclegs.png');
 			background-size: cover;
 			background-position: center;
@@ -930,13 +962,12 @@
 		.block-container {
 
 			width: 100%;
-			/* height: 800px; */
+			height: 800px;
 
 			padding: 100px 0px;
 			display: flex;
 			flex-direction: row;
 			justify-content: center;
-			
 			position: relative;
 		}
 
@@ -944,23 +975,21 @@
 		.column-container {
 
 			display: flex;
-			/* width: 60%; */
+			width: 60%;
 			transform-origin: 49.57% 49.27%;
-			transform: rotate(203deg) scale(0.75);
+			transform: rotate(203deg);
 			width: 800px;
 			height: 800px;
 
 			flex-direction: column;
 			align-items: start;
 			justify-content: center;
-			
 		}
 
 		.text1-container {
 			display: flex;
 			justify-content: center;
 			flex-direction: row;
-			flex-shrink: 2;
 			position: absolute;
 			width: 800px;
 			height: 900px;
@@ -1046,7 +1075,7 @@
 			width: 800px;
 			height: 900px;
 			transform-origin: 50% 50%;
-			transform: rotate(495deg) translate(20%, 20%);
+			transform: rotate(495deg);
 		}
 
 		.text1-rot {
@@ -1089,9 +1118,31 @@
 			transform: rotate(22.5deg) translate(-110px, 5px);
 		}
 	</style>
+	<script>
+		(event) => {
+			const cbutton = document.querySelector(".btn-clr-circle");
+			const circlecontainer = document.querySelector(".circle-container");
+			console.log("test" + circlecontainer.style.backgroundImage);
+
+			cbutton.addEventListener('mouseover', () => {
+				console.log(cbutton.styles.backgroundImage);
+				circlecontainer.styles.backgroundColor = '#eee !important';
+			})
+
+			cbutton.addEventListener('mouseout', () => {
+				circlecontainer.style.backgroundColor = 'initial';
+			});
+		};
+
+
+	</script>
+
 </head>
 
 <body>
+
+	<link href='https://kerekenavilag.com/wp-content/themes/twentytwentyfour/assets/fonts/le-jour-script'
+		rel='stylesheet'>
 	<div class="block-container">
 		<div class="column-container">
 			<div class="text1-container">
@@ -1119,7 +1170,7 @@
 				<div class="text-decoration text8-rot">A léleknek…</div>
 			</div>
 
-			<div class="circle-container">
+			<div id="centercircle" class="circle-container">
 				<button class="btn2" onclick="window.location.href='https://kerekenavilag.com/zenek/';"></button>
 				<button class="btn3"
 					onclick="window.location.href='https://kerekenavilag.com/bennem-budapest/';"></button>
@@ -1131,9 +1182,11 @@
 				<button class="btn7" onclick="window.location.href='https://kerekenavilag.com/szellem-2/';"></button>
 				<button class="btn8" onclick="window.location.href='https://kerekenavilag.com/epp-testben/';"></button>
 				<button class="btn9" onclick="window.location.href='https://kerekenavilag.com/rimelek/';"></button>
+				<button class="btn-clr-circle"></button>
 			</div>
 		</div>
 	</div>
+
 </body>
 
 </html>
